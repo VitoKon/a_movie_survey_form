@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<header>
+    <div>
+        <h1 id="title">Movie Survey</h1>
+        <p id="description">Are you a movie junkie?</p>
+    </div>
+</header>
+    <body>
+    <form id="survey-form" action="#0" method="post">
+        <div class= "headings"></div>
+
+       
+        <label for="name" id="name-label">Please enter your Name</label><br>
+        <input type="text" id="name" name="name" required placeholder="John Wick" class="form-input" required><br>
+       
+        <label for="email" id="email-label">Please enter your email</label><br>
+        <input type="email" id="email" required placeholder="my@email.com" class="form-input" required><br>
+       
+        <label for="number" id="number-label">Please enter your Age</label><br>
+        <input type="number" id="number" name="number" min="18" max="99" required placeholder="23" class="form-input" required><br>
+
+        <label for="dropdown" id="dropdown">Select your favourite movie category</label><br>
+        <select type="dropdown" id="category" class="form-input">
+
+        <option value="fiction">Fiction</option>
+        <option value="action">Action</option>
+        <option value="thriller">Thriller</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="other">Other</option>
+        </select><br>
+        <label for="frequency" id="frequency">How often do you watch movies?</label><br>
+            <input id="frequency" type="radio" id="Extremely Often" name="frequency" value="Extremely Often">
+            <label for="frequency">Extremely Often</label>
+            <br>
+            <input id="frequency" type="radio" id="Very Often" name="frequency" value="Very Often">
+            <label for="frequency">Very Often</label>
+            <br>
+            <input id="frequency" type="radio" id="Extremely Often" name="frequency" value="Often">
+            <label for="frequency">Often</label>
+            <br>
+            <input id="frequency" type="radio" id="Slightly Often" name="frequency" value="Slightly Often">
+            <label for="frequency">Slightly Often</label>
+            <br>
+            <input id="frequency" type="radio" id="Not Often" name="frequency" value="Not Often">
+            <label for="frequency">Not Often</label>
+            <br>
+        <label for="platform">Select the way you most often watch movies:</label><br>
+            <input type="checkbox" name="checkbox" id="platform" value="cinema">
+            <label for="checkbox">Cinema</label><br>
+            <input type="checkbox" name="checkbox" id="platform" value="netflix">
+            <label for="checkbox">Netflix</label><br>
+            <input type="checkbox" name="checkbox" id="platform" value="tv">
+            <label for="checkbox">TV</label><br>
+            <input type="checkbox" name="checkbox" id="platform" value="other">
+            <label for="checkbox">Other</label><br>
+        <label for="textarea">Type some of your favourite movies</label><br>
+            <textarea type="text" name="textarea" id="textarea"></textarea><br>
+        
+        <input type="submit" id="submit" value="Submit" />
+    </div>
+    </form>
+</body>
+</html>
